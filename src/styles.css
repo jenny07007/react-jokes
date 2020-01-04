@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  background: rgb(150, 254, 255);
+  background: linear-gradient(135deg, rgba(150, 254, 255, 1) 0%, rgba(45, 193, 188, 1) 50%, rgba(60, 193, 108, 1) 50%, rgba(60, 193, 108, 1) 100%);
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .joke-list {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .joke-list-sidebar {
+    width: 80%;
+    padding: 3em;
+    height: 18em;
+    margin: auto;
+    border-radius: 1em;
+  }
+
+  .ec-joy {
+    font-size: 7em;
+  }
+
+  .joke-list-getmore {
+    padding: .9em 3em;
+    box-shadow: none;
+    background: rgb(252, 70, 107);
+  }
+
+  .joke-list-getmore:hover {
+    box-shadow: none;
+    transform: none;
+    background: black;
+  }
+
+  .joke-list-jokes {
+    border-radius: 1em;
+    margin-top: -15px;
+    padding-top: 1em;
+  }
+
+  .fa-arrow-up:hover,
+  .fa-arrow-down:hover {
+    animation-name: none;
+    animation-duration: none;
+    animation-timing-function: none;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 667px) {
+  .joke-list {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .joke-list-title {
+    font-size: 1.5em;
+  }
+
+  .joke-list-sidebar {
+    width: 100%;
+    padding: 2em;
+    height: 15em;
+    margin: auto;
+    border-radius: 1em;
+  }
+
+  .joke {
+    padding: 1em 0;
+    flex-direction: column;
+  }
+
+  .joke-text {
+    width: 85%;
+    padding-top: 1em;
+    text-align: center;
+  }
+
+  .ec-joy {
+    font-size: 5em;
+  }
+
+  .joke-list-getmore {
+    padding: .6em .9em;
+    box-shadow: none;
+    background: rgb(252, 70, 107);
+  }
+
+  .joke-list-getmore:hover {
+    box-shadow: none;
+    transform: none;
+    background: black;
+  }
+
+  .ec::before {
+    content: "";
+  }
+
+  .joke-list-jokes {
+    border-radius: 1em;
+    margin-top: -15px;
+    padding-top: 1em;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fa-arrow-up:hover,
+  .fa-arrow-down:hover {
+    animation-name: none;
+    animation-duration: none;
+    animation-timing-function: none;
+  }
+
+  .joke-votes {
+    box-shadow: none;
+    margin: 0 2em;
+  }
+
+}
